@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <title>CSS Variables</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Update CSS Variables with <span class='colored-text'>JS</span></h1>
+    <div class="ui-container">
+      <div class='ui-wrapper'>
+        <label for="spacing">Spacing:</label>
+        <input type='number' min='-5', max='5' name='spacing' id='spacing'>
+      </div>
+      <div class='ui-wrapper'>
+        <label for="blur">Blur:</label>
+        <input type='number' min='0', max='5' name='blur' id='blur'>
+      </div>
+      <div class='ui-wrapper'>
+        <label for="base-color">Base Color:</label>
+        <input type='color' name='base-color' id='base-color'>
+      </div>
+    </div>
+
+    <span class='output'>CSS Variables</span>
+  </div>
+  <script src='../src/index.js'></script>
+  <noscript>Your browser does not support JavaScript. JavaScript is required to use this application</noscript>
+</body>
+</html>
