@@ -1,3 +1,9 @@
+/* :root {
+  --base-color: #000;
+  --spacing: 0;
+  --blur: 0;
+} */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,26 +24,33 @@ body {
   margin: auto;
 }
 
-.ui-container {
+.controls-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 3.5rem;
 }
 
-.container > .ui-wrapper {
-  margin: 0.5rem 0;
+.controls-container > .control-wrapper {
+  padding: 0.5rem 0;
   display: flex;
   align-items: center;
 }
 
-.ui-wrapper > label {
+.control-wrapper > label {
   margin-right: 1ch;
+}
+
+.colored-text {
+  color: var(--base-color)
 }
 
 .output {
   font-size: 4rem;
   box-shadow: 1px 1px 5px rgba(30, 30, 30, .25);
+  text-shadow: var(--spacing) var(--spacing) 2px var(--base-color);
+  filter: blur(var(--blur));
+  display: inline-block;
   padding: 1rem 3rem;
   background: #f4f4f4;
 }

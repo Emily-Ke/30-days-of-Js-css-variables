@@ -10,25 +10,25 @@
 </head>
 <body>
   <div class="container">
-    <h1>Update CSS Variables with <span class='colored-text'>JS</span></h1>
-    <div class="ui-container">
-      <div class='ui-wrapper'>
+    <h1>Update CSS Variables with <span class="colored-text">JS</span></h1>
+    <div class="controls-container">
+      <div class="control-wrapper">
         <label for="spacing">Spacing:</label>
-        <input type='number' min='-5', max='5' name='spacing' id='spacing'>
+        <input type="range" min="-5", max="5" value="0" name="spacing" id="spacing" data-suffix="px">
       </div>
-      <div class='ui-wrapper'>
+      <div class="control-wrapper">
         <label for="blur">Blur:</label>
-        <input type='number' min='0', max='5' name='blur' id='blur'>
+        <input type="range" min="0", max="5" value="0" name="blur" id="blur" data-suffix="px">
       </div>
-      <div class='ui-wrapper'>
+      <div class="control-wrapper">
         <label for="base-color">Base Color:</label>
-        <input type='color' name='base-color' id='base-color'>
+        <input type="color" name="base-color" id="base-color">
       </div>
     </div>
 
-    <span class='output'>CSS Variables</span>
+    <span class="output">CSS Variables</span>
   </div>
-  <script src='../src/index.js'></script>
+  <script src="../src/index.js"></script>
   <noscript>Your browser does not support JavaScript. JavaScript is required to use this application</noscript>
 </body>
 </html>
