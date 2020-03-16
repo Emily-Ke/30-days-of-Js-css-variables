@@ -1,0 +1,12 @@
+{
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "prettier": "prettier --single-quote --write \"src/*.js\""
+  },
+  "license": "ISC"
+}
